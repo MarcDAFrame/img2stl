@@ -96,7 +96,7 @@ def blur_img(img, blur=(5, 5)):
 
 def run(img_dir, out_dir, blur=None, invert=False):
     """
-    blurs and image so that the final product looks smooth and doesn't have as many jagged lines
+    runs the whole project instead of you having to call individual functions
 
     @param {string} img_dir - The image directory
     @param {string} out_dir - The file for the stl to be saved to
