@@ -1,5 +1,23 @@
 # img2stl v0.0
 
+## Synopsis
+This code converts 2D images to gray scale and then given the gray values creates a height map. This can create some neat effects and could be used for 3D printing a portrait or abstract designs.
+
+Just a neat side project that was in my head for a few weeks.
+
+## Examples
+
+| Raw Image  | Stair.stl |        Stair.stl (with blur)       |
+| ------------- | ------------- | ------------- |
+| <img src="https://github.com/MarcDAFrame/img2stl/blob/master/git%20imgs/gradient.jpg" width="200" height="150">  | <img src="https://github.com/MarcDAFrame/img2stl/blob/master/git%20imgs/stairs.PNG" width="200" height="150">  |     <img src="https://github.com/MarcDAFrame/img2stl/blob/master/git%20imgs/blurred%20stairs.PNG" width="200" height="150">          |
+| this is the image  | basic settings |      with a blur of (50, 50)         |
+  
+| Raw Image  | Elvis.stl |        Elvis.stl (with invert)       |
+| ------------- | ------------- | ------------- |
+| <img src="https://github.com/MarcDAFrame/img2stl/blob/master/git%20imgs/elvis.jpg" width="200" height="150">  | <img src="https://github.com/MarcDAFrame/img2stl/blob/master/git%20imgs/elvis.PNG" width="200" height="150">  |     <img src="https://github.com/MarcDAFrame/img2stl/blob/master/git%20imgs/elvis%20inverted.PNG" width="200" height="150">          |
+| this is the image  | basic settings |      with inverted = True        |
+
+
 ## Methods:
   - **run(img_dir, out_dir, blur=None, invert=False)**
   
@@ -43,3 +61,6 @@
       @param {tuple} blur - (h, v) h is horizotal blur coefficient, v is vertical blur coefficient
 
       @returns {numpy image array}
+
+## TODO:
+  - add threshold so you can remove pure white values / noise
